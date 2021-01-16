@@ -6,9 +6,9 @@ namespace LeetCode.Problems
 	{
 		public static int Solutions(int[] distance, int start, int destination)
 		{
-			// clock wise
+			// start to  destination
 			int clockSum = GetDistance(distance, start, destination);
-			// anti clock wise
+			// destination to  start
 			int antiCLockSum = GetDistance(distance, destination, start);
 			return Math.Min(clockSum, antiCLockSum);
 		}
